@@ -1,1127 +1,1107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
--<widget version="3.4.2" versionCode="20230" id="net.imlearning.www" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+<widget xmlns     = "http://www.w3.org/ns/widgets"
 
-<name>NRC Learn</name>
+        xmlns:gap = "http://phonegap.com/ns/1.0"
 
-<description> NRC Demo App </description>
+        xmlns:android = "http://schemas.android.com/apk/res/android"
 
-<author email="mobile@moodle.com" href="http://moodle.com"> Intact Media </author>
+        id        = "net.imlearning.www"
 
+        versionCode = "20230"
 
--<gap:config-file parent="CFBundleShortVersionString" platform="ios">
+        version   = "3.4.2">
 
-<string>3.4.2</string>
+    <name>NRC Learn</name>
 
-</gap:config-file>
 
-<gap:platform name="ios"/>
 
-<gap:platform name="android"/>
+    <description>
 
-<access origin="*"/>
+        NRC Learn i2Selflearn
 
-<access origin="tel:*" launch-external="yes"/>
+    </description>
 
-<access origin="mailto:*" launch-external="yes"/>
 
-<access origin="geo:*" launch-external="yes"/>
 
-<allow-navigation href="cdvfile:*"/>
+    <author href="http://www.imlearning.net/lms" email="khader@intactmedia.net">
 
-<allow-navigation href="content:*"/>
+        Intact Media
 
-<allow-navigation href="data:*"/>
+    </author>
 
-<allow-navigation href="*"/>
 
-<allow-intent href="*"/>
 
-<preference name="phonegap-version" value="cli-6.5.0"/>
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
 
-<preference name="orientation" value="default"/>
+        <string>3.4.2</string>
 
-<preference name="target-device" value="universal"/>
+    </gap:config-file>
 
-<preference name="fullscreen" value="false"/>
 
-<preference name="stay-in-webview" value="false"/>
 
-<preference name="webviewbounce" value="false"/>
+    <gap:platform name="ios" />
 
-<preference name="prerendered-icon" value="true"/>
+    <gap:platform name="android" />
 
-<preference name="load-url-timeout" value="60000"/>
 
-<preference name="AppendUserAgent" value="MoodleMobile"/>
 
-<preference name="android-minSdkVersion" value="14"/>
+    <access origin="*" />
 
-<preference name="android-targetSdkVersion" value="19"/>
+    <access origin="tel:*" launch-external="yes" />
 
-<preference name="android-installLocation" value="auto"/>
+    <access origin="mailto:*" launch-external="yes" />
 
-<preference name="UIWebViewBounce" value="false"/>
+    <access origin="geo:*" launch-external="yes" />
 
-<preference name="DisallowOverscroll" value="true"/>
 
-<preference name="BackupWebStorage" value="none"/>
 
-<preference name="KeyboardDisplayRequiresUserAction" value="false"/>
+    <allow-navigation href="cdvfile:*" />
 
-<preference name="AllowInlineMediaPlayback" value="true"/>
+    <allow-navigation href="content:*" />
 
-<preference name="SplashMaintainAspectRatio" value="true"/>
+    <allow-navigation href="data:*" />
 
+    <allow-navigation href="*" />
 
--<feature name="StatusBar">
 
-<param onload="true" name="ios-package" value="CDVStatusBar"/>
 
-</feature>
+    <allow-intent href="*" />
 
-<preference name="AndroidPersistentFileLocation" value="Compatibility"/>
 
-<preference name="iosPersistentFileLocation" value="Compatibility"/>
 
-<icon src="icon.png"/>
+    <preference name="phonegap-version" value="cli-6.5.0" />
 
-<gap:splash src="splash.png"/>
+    <preference name="orientation"      value="default" />
 
+    <preference name="target-device"    value="universal" />
 
--<platform name="android">
+    <preference name="fullscreen"       value="false" />
 
-<icon src="resources/android/icon/drawable-ldpi-icon.png" qualifier="ldpi"/>
+    <preference name="stay-in-webview"  value="false" />
 
-<icon src="resources/android/icon/drawable-mdpi-icon.png" qualifier="mdpi"/>
+    <preference name="webviewbounce"    value="false" />
 
-<icon src="resources/android/icon/drawable-hdpi-icon.png" qualifier="hdpi"/>
+    <preference name="prerendered-icon" value="true" />
 
-<icon src="resources/android/icon/drawable-xhdpi-icon.png" qualifier="xhdpi"/>
+    <preference name="load-url-timeout" value="60000" />
 
-<icon src="resources/android/icon/drawable-xxhdpi-icon.png" qualifier="xxhdpi"/>
+    <preference name="AppendUserAgent" value="MoodleMobile" />
 
-<icon src="resources/android/icon/drawable-xxxhdpi-icon.png" qualifier="xxxhdpi"/>
+    <preference name="android-minSdkVersion" value="14" />
 
-<splash src="resources/android/splash/drawable-land-ldpi-screen.png" qualifier="land-ldpi"/>
+    <preference name="android-targetSdkVersion" value="19" />
 
-<splash src="resources/android/splash/drawable-land-mdpi-screen.png" qualifier="land-mdpi"/>
+    <preference name="android-installLocation" value="auto" />
 
-<splash src="resources/android/splash/drawable-land-hdpi-screen.png" qualifier="land-hdpi"/>
+    <preference name="UIWebViewBounce" value="false" />
 
-<splash src="resources/android/splash/drawable-land-xhdpi-screen.png" qualifier="land-xhdpi"/>
+    <preference name="DisallowOverscroll" value="true" />
 
-<splash src="resources/android/splash/drawable-land-xxhdpi-screen.png" qualifier="land-xxhdpi"/>
+    <preference name="BackupWebStorage" value="none" />
 
-<splash src="resources/android/splash/drawable-land-xxxhdpi-screen.png" qualifier="land-xxxhdpi"/>
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
 
-<splash src="resources/android/splash/drawable-port-ldpi-screen.png" qualifier="port-ldpi"/>
+    <preference name="AllowInlineMediaPlayback" value="true" />
 
-<splash src="resources/android/splash/drawable-port-mdpi-screen.png" qualifier="port-mdpi"/>
+    <preference name="SplashMaintainAspectRatio" value="true" />
 
-<splash src="resources/android/splash/drawable-port-hdpi-screen.png" qualifier="port-hdpi"/>
 
-<splash src="resources/android/splash/drawable-port-xhdpi-screen.png" qualifier="port-xhdpi"/>
 
-<splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" qualifier="port-xxhdpi"/>
+    <feature name="StatusBar">
 
-<splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" qualifier="port-xxxhdpi"/>
+        <param name="ios-package" value="CDVStatusBar" onload="true"/>
 
-</platform>
+    </feature>
 
 
--<platform name="ios">
 
-<icon src="resources/ios/icon/icon.png" height="57" width="57"/>
+    <preference name="AndroidPersistentFileLocation"    value="Compatibility" />
 
-<icon src="resources/ios/icon/icon@2x.png" height="114" width="114"/>
+    <preference name="iosPersistentFileLocation"        value="Compatibility" />
 
-<icon src="resources/ios/icon/icon-40.png" height="40" width="40"/>
 
-<icon src="resources/ios/icon/icon-40@2x.png" height="80" width="80"/>
 
-<icon src="resources/ios/icon/icon-40@3x.png" height="120" width="120"/>
+    <icon src="icon.png" />
 
-<icon src="resources/ios/icon/icon-50.png" height="50" width="50"/>
+    <gap:splash src="splash.png" />
 
-<icon src="resources/ios/icon/icon-50@2x.png" height="100" width="100"/>
 
-<icon src="resources/ios/icon/icon-60.png" height="60" width="60"/>
 
-<icon src="resources/ios/icon/icon-60@2x.png" height="120" width="120"/>
+    <platform name="android">
 
-<icon src="resources/ios/icon/icon-60@3x.png" height="180" width="180"/>
+        <icon src="resources/android/icon/drawable-ldpi-icon.png" qualifier="ldpi"/>
 
-<icon src="resources/ios/icon/icon-72.png" height="72" width="72"/>
+        <icon src="resources/android/icon/drawable-mdpi-icon.png" qualifier="mdpi"/>
 
-<icon src="resources/ios/icon/icon-72@2x.png" height="144" width="144"/>
+        <icon src="resources/android/icon/drawable-hdpi-icon.png" qualifier="hdpi"/>
 
-<icon src="resources/ios/icon/icon-76.png" height="76" width="76"/>
+        <icon src="resources/android/icon/drawable-xhdpi-icon.png" qualifier="xhdpi"/>
 
-<icon src="resources/ios/icon/icon-76@2x.png" height="152" width="152"/>
+        <icon src="resources/android/icon/drawable-xxhdpi-icon.png" qualifier="xxhdpi"/>
 
-<icon src="resources/ios/icon/icon-83.5@2x.png" height="167" width="167"/>
+        <icon src="resources/android/icon/drawable-xxxhdpi-icon.png" qualifier="xxxhdpi"/>
 
-<icon src="resources/ios/icon/icon-small.png" height="29" width="29"/>
+        <splash src="resources/android/splash/drawable-land-ldpi-screen.png" qualifier="land-ldpi"/>
 
-<icon src="resources/ios/icon/icon-small@2x.png" height="58" width="58"/>
+        <splash src="resources/android/splash/drawable-land-mdpi-screen.png" qualifier="land-mdpi"/>
 
-<icon src="resources/ios/icon/icon-small@3x.png" height="87" width="87"/>
+        <splash src="resources/android/splash/drawable-land-hdpi-screen.png" qualifier="land-hdpi"/>
 
-<splash src="resources/ios/splash/Default-568h@2x~iphone.png" height="1136" width="640"/>
+        <splash src="resources/android/splash/drawable-land-xhdpi-screen.png" qualifier="land-xhdpi"/>
 
-<splash src="resources/ios/splash/Default-667h.png" height="1334" width="750"/>
+        <splash src="resources/android/splash/drawable-land-xxhdpi-screen.png" qualifier="land-xxhdpi"/>
 
-<splash src="resources/ios/splash/Default-736h.png" height="2208" width="1242"/>
+        <splash src="resources/android/splash/drawable-land-xxxhdpi-screen.png" qualifier="land-xxxhdpi"/>
 
-<splash src="resources/ios/splash/Default-Landscape-736h.png" height="1242" width="2208"/>
+        <splash src="resources/android/splash/drawable-port-ldpi-screen.png" qualifier="port-ldpi"/>
 
-<splash src="resources/ios/splash/Default-Landscape@2x~ipad.png" height="1536" width="2048"/>
+        <splash src="resources/android/splash/drawable-port-mdpi-screen.png" qualifier="port-mdpi"/>
 
-<splash src="resources/ios/splash/Default-Landscape~ipad.png" height="768" width="1024"/>
+        <splash src="resources/android/splash/drawable-port-hdpi-screen.png" qualifier="port-hdpi"/>
 
-<splash src="resources/ios/splash/Default-Portrait@2x~ipad.png" height="2048" width="1536"/>
+        <splash src="resources/android/splash/drawable-port-xhdpi-screen.png" qualifier="port-xhdpi"/>
 
-<splash src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
+        <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" qualifier="port-xxhdpi"/>
 
-<splash src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
+        <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" qualifier="port-xxxhdpi"/>
 
-<splash src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
+    </platform>
 
-<splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" height="2048" width="2732"/>
 
-<splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" height="2732" width="2048"/>
 
-</platform>
+    <platform name="ios">
 
-<gap:plugin version="2.4.1" name="cordova-plugin-camera" source="npm"/>
+        <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
 
+        <icon src="resources/ios/icon/icon@2x.png" width="114" height="114"/>
 
--<gap:plugin version="1.4.3" name="cordova-plugin-media-capture" source="npm">
+        <icon src="resources/ios/icon/icon-40.png" width="40" height="40"/>
 
-<param name="CAMERA_USAGE_DESCRIPTION" value="We'd like to access your camera to let you take a photo"/>
+        <icon src="resources/ios/icon/icon-40@2x.png" width="80" height="80"/>
 
-<param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We'd like to access your photo library to let you pick a photo"/>
+        <icon src="resources/ios/icon/icon-40@3x.png" width="120" height="120"/>
 
-<param name="MICROPHONE_USAGE_DESCRIPTION" value="We'd like to access your microphone to let you record an audio"/>
+        <icon src="resources/ios/icon/icon-50.png" width="50" height="50"/>
 
-</gap:plugin>
+        <icon src="resources/ios/icon/icon-50@2x.png" width="100" height="100"/>
 
-<gap:plugin version="1.1.6" name="cordova-plugin-device" source="npm"/>
+        <icon src="resources/ios/icon/icon-60.png" width="60" height="60"/>
 
-<gap:plugin version="4.3.3" name="cordova-plugin-file" source="npm"/>
+        <icon src="resources/ios/icon/icon-60@2x.png" width="120" height="120"/>
 
-<gap:plugin version="1.6.3" name="cordova-plugin-file-transfer" source="npm"/>
+        <icon src="resources/ios/icon/icon-60@3x.png" width="180" height="180"/>
 
-<gap:plugin version="1.0.7" name="cordova-plugin-globalization" source="npm"/>
+        <icon src="resources/ios/icon/icon-72.png" width="72" height="72"/>
 
-<gap:plugin version="1.7.1" name="cordova-plugin-inappbrowser" source="npm"/>
+        <icon src="resources/ios/icon/icon-72@2x.png" width="144" height="144"/>
 
-<gap:plugin version="1.3.3" name="cordova-plugin-network-information" source="npm"/>
+        <icon src="resources/ios/icon/icon-76.png" width="76" height="76"/>
 
-<gap:plugin version="2.2.3" name="cordova-plugin-statusbar" source="npm"/>
+        <icon src="resources/ios/icon/icon-76@2x.png" width="152" height="152"/>
 
-<gap:plugin version="1.3.2" name="cordova-plugin-whitelist" source="npm"/>
+        <icon src="resources/ios/icon/icon-83.5@2x.png" width="167" height="167"/>
 
-<gap:plugin version="4.0.3" name="cordova-plugin-splashscreen" source="npm"/>
+        <icon src="resources/ios/icon/icon-small.png" width="29" height="29"/>
 
-<gap:plugin version="0.1.0" name="cordova-universal-clipboard" source="npm"/>
+        <icon src="resources/ios/icon/icon-small@2x.png" width="58" height="58"/>
 
-<gap:plugin version="1.0.1" name="nl.kingsquare.cordova.background-audio" source="npm"/>
+        <icon src="resources/ios/icon/icon-small@3x.png" width="87" height="87"/>
 
+        <splash src="resources/ios/splash/Default-568h@2x~iphone.png" width="640" height="1136"/>
 
--<gap:plugin version="1.9.2" name="phonegap-plugin-push" source="npm">
+        <splash src="resources/ios/splash/Default-667h.png" width="750" height="1334"/>
 
-<param name="SENDER_ID" value="694767596569"/>
+        <splash src="resources/ios/splash/Default-736h.png" width="1242" height="2208"/>
 
-</gap:plugin>
+        <splash src="resources/ios/splash/Default-Landscape-736h.png" width="2208" height="1242"/>
 
+        <splash src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
 
--<gap:plugin version="4.3.0" name="cordova-plugin-customurlscheme" source="npm">
+        <splash src="resources/ios/splash/Default-Landscape~ipad.png" width="1024" height="768"/>
 
-<param name="URL_SCHEME" value="moodlemobile"/>
+        <splash src="resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
 
-</gap:plugin>
+        <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
 
-<gap:plugin version="2.2.1" name="ionic-plugin-keyboard" source="npm"/>
+        <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
 
-<gap:plugin version="3.1.0" name="cordova-plugin-zip" source="npm"/>
+        <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
 
-<gap:plugin name="cordova-plugin-local-notifications-mm" source="npm"/>
+        <splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" height="2048"/>
 
-<gap:plugin name="net.tunts.webintent" source="git" spec="https://github.com/Tunts/WebIntent.git"/>
+        <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
 
-<gap:plugin name="ch.ti8m.documenthandler" source="git" spec="https://github.com/ti8m/DocumentHandler.git"/>
+    </platform>
 
 
--<gap:config-file parent="/manifest" platform="android">
 
-<application android:debuggable="true"/>
+    <gap:plugin name="cordova-plugin-camera" source="npm" version="2.4.1" />
 
-</gap:config-file>
+    <gap:plugin name="cordova-plugin-media-capture" source="npm" version="1.4.3">
 
-<!-- See MOBILE-892 -->
+        <param name="CAMERA_USAGE_DESCRIPTION" value="We'd like to access your camera to let you take a photo"/>
 
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We'd like to access your photo library to let you pick a photo"/>
 
-<preference name="permissions" value="none"/>
+        <param name="MICROPHONE_USAGE_DESCRIPTION" value="We'd like to access your microphone to let you record an audio"/>
 
+    </gap:plugin>
 
--<gap:config-file parent="/manifest" platform="android" mode="delete">
+    <gap:plugin name="cordova-plugin-device" source="npm" version="1.1.6" />
 
-<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <gap:plugin name="cordova-plugin-file" source="npm" version="4.3.3" />
 
-<uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" version="1.6.3" />
 
-<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <gap:plugin name="cordova-plugin-globalization" source="npm" version="1.0.7" />
 
-<uses-permission android:name="android.permission.VIBRATE"/>
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.7.1" />
 
-</gap:config-file>
+    <gap:plugin name="cordova-plugin-network-information" source="npm" version="1.3.3" />
 
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.3" />
 
--<gap:config-file parent="CFBundleDocumentTypes" platform="ios" mode="add">
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.3.2" />
 
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="4.0.3" />
 
--<array>
+    <gap:plugin name="cordova-universal-clipboard" source="npm" version="0.1.0" />
 
+    <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" version="1.0.1" />
 
--<dict>
 
-<key>CFBundleTypeName</key>
 
-<string>Unknown File</string>
+    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.9.2">
 
-<key>LSHandlerRank</key>
+        <param name="SENDER_ID" value="694767596569" />
 
-<string>Alternate</string>
+    </gap:plugin>
 
-<key>LSItemContentTypes</key>
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm" version="4.3.0">
 
+        <param name="URL_SCHEME" value="moodlemobile" />
 
--<array>
+    </gap:plugin>
 
-<string>public.calendar-event</string>
+    <gap:plugin name="ionic-plugin-keyboard" source="npm" version="2.2.1" />
 
-<string>public.database</string>
+    <gap:plugin name="cordova-plugin-zip" source="npm" version="3.1.0" />
 
-<string>public.executable</string>
+    <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />
 
-<string>public.data</string>
+    <gap:plugin name="net.tunts.webintent" spec="https://github.com/Tunts/WebIntent.git" source="git" />
 
-<string>public.content </string>
+    <gap:plugin name="ch.ti8m.documenthandler" spec="https://github.com/ti8m/DocumentHandler.git" source="git" />
 
-<string>public.item</string>
 
-</array>
 
-</dict>
+    <gap:config-file platform="android" parent="/manifest">
 
+         <application android:debuggable="true" />
 
--<dict>
+    </gap:config-file>
 
-<key>CFBundleTypeName</key>
 
-<string>Video</string>
 
-<key>LSHandlerRank</key>
+    <!-- See MOBILE-892 -->
 
-<string>Alternate</string>
+    <preference name="permissions" value="none"/>
 
-<key>LSItemContentTypes</key>
 
 
--<array>
+    <gap:config-file platform="android" parent="/manifest" mode="delete">
 
-<string>public.video</string>
+        <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
-</array>
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-</dict>
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
+        <uses-permission android:name="android.permission.VIBRATE"/>
 
--<dict>
+    </gap:config-file>
 
-<key>CFBundleTypeName</key>
 
-<string>Image</string>
 
-<key>LSHandlerRank</key>
+    <gap:config-file platform="ios" parent="CFBundleDocumentTypes" mode="add">
 
-<string>Alternate</string>
+        <array>
 
-<key>LSItemContentTypes</key>
+            <dict>
 
+                <key>CFBundleTypeName</key>
 
--<array>
+                <string>Unknown File</string>
 
-<string>public.image</string>
+                <key>LSHandlerRank</key>
 
-</array>
+                <string>Alternate</string>
 
-</dict>
+                <key>LSItemContentTypes</key>
 
+                <array>
 
--<dict>
+                  <string>public.calendar-event</string>
 
-<key>CFBundleTypeName</key>
+                  <string>public.database</string>
 
-<string>Web Archive</string>
+                  <string>public.executable</string>
 
-<key>LSHandlerRank</key>
+                  <string>public.data</string>
 
-<string>Alternate</string>
+                  <string>public.content </string>
 
-<key>LSItemContentTypes</key>
+                  <string>public.item</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>com.apple.webarchive</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>Video</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>iWork Keynote</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>public.video</string>
 
-<string>Alternate</string>
+                </array>
 
-<key>LSItemContentTypes</key>
+            </dict>
 
+            <dict>
 
--<array>
+                <key>CFBundleTypeName</key>
 
-<string>com.apple.keynote.key</string>
+                <string>Image</string>
 
-<string>com.apple.iwork.keynote.key</string>
+                <key>LSHandlerRank</key>
 
-<string>com.apple.iwork.keynote.kth</string>
+                <string>Alternate</string>
 
-</array>
+                <key>LSItemContentTypes</key>
 
-</dict>
+                <array>
 
+                  <string>public.image</string>
 
--<dict>
+                </array>
 
-<key>CFBundleTypeName</key>
+            </dict>
 
-<string>iWork Numbers</string>
+            <dict>
 
-<key>LSHandlerRank</key>
+                <key>CFBundleTypeName</key>
 
-<string>Alternate</string>
+                <string>Web Archive</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSHandlerRank</key>
 
+                <string>Alternate</string>
 
--<array>
+                <key>LSItemContentTypes</key>
 
-<string>com.apple.numbers.numbers</string>
+                <array>
 
-<string>com.apple.iwork.numbers.numbers</string>
+                  <string>com.apple.webarchive</string>
 
-<string>com.apple.iwork.numbers.template</string>
+                </array>
 
-</array>
+            </dict>
 
-</dict>
+            <dict>
 
+                <key>CFBundleTypeName</key>
 
--<dict>
+                <string>iWork Keynote</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSHandlerRank</key>
 
-<string>iWork Pages</string>
+                <string>Alternate</string>
 
-<key>LSHandlerRank</key>
+                <key>LSItemContentTypes</key>
 
-<string>Alternate</string>
+                <array>
 
-<key>LSItemContentTypes</key>
+                  <string>com.apple.keynote.key</string>
 
+                  <string>com.apple.iwork.keynote.key</string>
 
--<array>
+                  <string>com.apple.iwork.keynote.kth</string>
 
-<string>com.apple.page.pages</string>
+                </array>
 
-<string>com.apple.iwork.pages.pages</string>
+            </dict>
 
-<string>com.apple.iwork.pages.template</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>iWork Numbers</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>OpenDocument Spreadsheet</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>com.apple.numbers.numbers</string>
 
-<string>Alternate</string>
+                  <string>com.apple.iwork.numbers.numbers</string>
 
-<key>LSItemContentTypes</key>
+                  <string>com.apple.iwork.numbers.template</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>org.oasis.opendocument.spreadsheet</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>iWork Pages</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>OpenDocument Presentation</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>com.apple.page.pages</string>
 
-<string>Alternate</string>
+                  <string>com.apple.iwork.pages.pages</string>
 
-<key>LSItemContentTypes</key>
+                  <string>com.apple.iwork.pages.template</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>org.oasis.opendocument.presentation</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>OpenDocument Spreadsheet</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>OpenDocument Text</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>org.oasis.opendocument.spreadsheet</string>
 
-<string>Alternate</string>
+                </array>
 
-<key>LSItemContentTypes</key>
+            </dict>
 
+            <dict>
 
--<array>
+                <key>CFBundleTypeName</key>
 
-<string>org.oasis.opendocument.text</string>
+                <string>OpenDocument Presentation</string>
 
-</array>
+                <key>LSHandlerRank</key>
 
-</dict>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<dict>
+                <array>
 
-<key>CFBundleTypeName</key>
+                  <string>org.oasis.opendocument.presentation</string>
 
-<string>Folder</string>
+                </array>
 
-<key>LSHandlerRank</key>
+            </dict>
 
-<string>Alternate</string>
+            <dict>
 
-<key>LSItemContentTypes</key>
+                <key>CFBundleTypeName</key>
 
+                <string>OpenDocument Text</string>
 
--<array>
+                <key>LSHandlerRank</key>
 
-<string>public.folder</string>
+                <string>Alternate</string>
 
-</array>
+                <key>LSItemContentTypes</key>
 
-</dict>
+                <array>
 
+                  <string>org.oasis.opendocument.text</string>
 
--<dict>
+                </array>
 
-<key>CFBundleTypeName</key>
+            </dict>
 
-<string>Audio</string>
+            <dict>
 
-<key>LSHandlerRank</key>
+                <key>CFBundleTypeName</key>
 
-<string>Alternate</string>
+                <string>Folder</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSHandlerRank</key>
 
+                <string>Alternate</string>
 
--<array>
+                <key>LSItemContentTypes</key>
 
-<string>public.audio</string>
+                <array>
 
-<string>public.mp3</string>
+                  <string>public.folder</string>
 
-<string>public.mpeg-4-audio</string>
+                </array>
 
-<string>com.apple.protected-​mpeg-4-audio</string>
+            </dict>
 
-<string>public.aifc-audio</string>
+            <dict>
 
-<string>com.apple.coreaudio-​format</string>
+                <key>CFBundleTypeName</key>
 
-<string>public.aiff-audio</string>
+                <string>Audio</string>
 
-</array>
+                <key>LSHandlerRank</key>
 
-</dict>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<dict>
+                <array>
 
-<key>CFBundleTypeName</key>
+                  <string>public.audio</string>
 
-<string>Movie</string>
+                  <string>public.mp3</string>
 
-<key>LSHandlerRank</key>
+                  <string>public.mpeg-4-audio</string>
 
-<string>Alternate</string>
+                  <string>com.apple.protected-​mpeg-4-audio</string>
 
-<key>LSItemContentTypes</key>
+                  <string>public.aifc-audio</string>
 
+                  <string>com.apple.coreaudio-​format</string>
 
--<array>
+                  <string>public.aiff-audio</string>
 
-<string>public.movie</string>
+                </array>
 
-<string>public.3gpp2</string>
+            </dict>
 
-<string>public.3gpp</string>
+            <dict>
 
-<string>public.mpeg</string>
+                <key>CFBundleTypeName</key>
 
-<string>com.apple.quicktime-movie</string>
+                <string>Movie</string>
 
-<string>public.mpeg-4</string>
+                <key>LSHandlerRank</key>
 
-</array>
+                <string>Alternate</string>
 
-</dict>
+                <key>LSItemContentTypes</key>
 
+                <array>
 
--<dict>
+                  <string>public.movie</string>
 
-<key>CFBundleTypeName</key>
+                  <string>public.3gpp2</string>
 
-<string>GIF image</string>
+                  <string>public.3gpp</string>
 
-<key>LSHandlerRank</key>
+                  <string>public.mpeg</string>
 
-<string>Alternate</string>
+                  <string>com.apple.quicktime-movie</string>
 
-<key>LSItemContentTypes</key>
+                  <string>public.mpeg-4</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>com.compuserve.gif</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>GIF image</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>PNG image</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>com.compuserve.gif</string>
 
-<string>Alternate</string>
+                </array>
 
-<key>LSItemContentTypes</key>
+            </dict>
 
+            <dict>
 
--<array>
+                <key>CFBundleTypeName</key>
 
-<string>public.png</string>
+                <string>PNG image</string>
 
-</array>
+                <key>LSHandlerRank</key>
 
-</dict>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<dict>
+                <array>
 
-<key>CFBundleTypeName</key>
+                  <string>public.png</string>
 
-<string>TIFF image</string>
+                </array>
 
-<key>LSHandlerRank</key>
+            </dict>
 
-<string>Alternate</string>
+            <dict>
 
-<key>LSItemContentTypes</key>
+                <key>CFBundleTypeName</key>
 
+                <string>TIFF image</string>
 
--<array>
+                <key>LSHandlerRank</key>
 
-<string>public.tiff</string>
+                <string>Alternate</string>
 
-</array>
+                <key>LSItemContentTypes</key>
 
-</dict>
+                <array>
 
+                  <string>public.tiff</string>
 
--<dict>
+                </array>
 
-<key>CFBundleTypeName</key>
+            </dict>
 
-<string>JPEG image</string>
+            <dict>
 
-<key>LSHandlerRank</key>
+                <key>CFBundleTypeName</key>
 
-<string>Alternate</string>
+                <string>JPEG image</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSHandlerRank</key>
 
+                <string>Alternate</string>
 
--<array>
+                <key>LSItemContentTypes</key>
 
-<string>public.jpeg</string>
+                <array>
 
-</array>
+                  <string>public.jpeg</string>
 
-</dict>
+                </array>
 
+            </dict>
 
--<dict>
+            <dict>
 
-<key>CFBundleTypeName</key>
+                <key>CFBundleTypeName</key>
 
-<string>XML</string>
+                <string>XML</string>
 
-<key>LSHandlerRank</key>
+                <key>LSHandlerRank</key>
 
-<string>Alternate</string>
+                <string>Alternate</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSItemContentTypes</key>
 
+                <array>
 
--<array>
+                  <string>public.xml</string>
 
-<string>public.xml</string>
+                </array>
 
-</array>
+            </dict>
 
-</dict>
+            <dict>
 
+                <key>CFBundleTypeName</key>
 
--<dict>
+                <string>HTML</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSHandlerRank</key>
 
-<string>HTML</string>
+                <string>Alternate</string>
 
-<key>LSHandlerRank</key>
+                <key>LSItemContentTypes</key>
 
-<string>Alternate</string>
+                <array>
 
-<key>LSItemContentTypes</key>
+                  <string>public.html</string>
 
+                  <string>public.xhtml</string>
 
--<array>
+                </array>
 
-<string>public.html</string>
+            </dict>
 
-<string>public.xhtml</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeName</key>
 
-</dict>
+                <string>Rich Text</string>
 
+                <key>LSHandlerRank</key>
 
--<dict>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>Rich Text</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>public.rtf</string>
 
-<string>Alternate</string>
+                  <string>com.apple.rtfd</string>
 
-<key>LSItemContentTypes</key>
+                  <string>com.apple.flat-rtfd</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>public.rtf</string>
+            <dict>
 
-<string>com.apple.rtfd</string>
+                <key>CFBundleTypeName</key>
 
-<string>com.apple.flat-rtfd</string>
+                <string>Text</string>
 
-</array>
+                <key>LSHandlerRank</key>
 
-</dict>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<dict>
+                <array>
 
-<key>CFBundleTypeName</key>
+                  <string>public.text</string>
 
-<string>Text</string>
+                  <string>public.plain-text</string>
 
-<key>LSHandlerRank</key>
+                  <string>public.utf8-plain-text</string>
 
-<string>Alternate</string>
+                  <string>public.utf16-external-plain-​text</string>
 
-<key>LSItemContentTypes</key>
+                  <string>public.utf16-plain-text</string>
 
+                  <string>com.apple.traditional-mac-​plain-text</string>
 
--<array>
+                  <string>public.source-code</string>
 
-<string>public.text</string>
+                  <string>public.c-source</string>
 
-<string>public.plain-text</string>
+                  <string>public.objective-c-source</string>
 
-<string>public.utf8-plain-text</string>
+                  <string>public.c-plus-plus-source</string>
 
-<string>public.utf16-external-plain-​text</string>
+                  <string>public.objective-c-plus-​plus-source</string>
 
-<string>public.utf16-plain-text</string>
+                  <string>public.c-header</string>
 
-<string>com.apple.traditional-mac-​plain-text</string>
+                  <string>public.c-plus-plus-header</string>
 
-<string>public.source-code</string>
+                  <string>com.sun.java-source</string>
 
-<string>public.c-source</string>
+                  <string>public.script</string>
 
-<string>public.objective-c-source</string>
+                  <string>public.shell-script</string>
 
-<string>public.c-plus-plus-source</string>
+                </array>
 
-<string>public.objective-c-plus-​plus-source</string>
+            </dict>
 
-<string>public.c-header</string>
+            <dict>
 
-<string>public.c-plus-plus-header</string>
+                <key>CFBundleTypeExtensions</key>
 
-<string>com.sun.java-source</string>
+                <array>
 
-<string>public.script</string>
+                  <string>zip</string>
 
-<string>public.shell-script</string>
+                  <string>zipx</string>
 
-</array>
+                </array>
 
-</dict>
+                <key>CFBundleTypeName</key>
 
+                <string>Zip archive</string>
 
--<dict>
+                <key>LSHandlerRank</key>
 
-<key>CFBundleTypeExtensions</key>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<array>
+                <array>
 
-<string>zip</string>
+                  <string>public.zip-archive</string>
 
-<string>zipx</string>
+                  <string>public.archive</string>
 
-</array>
+                  <string>com.pkware.zip-archive</string>
 
-<key>CFBundleTypeName</key>
+                  <string>com.pkware.zipx-archive</string>
 
-<string>Zip archive</string>
+                </array>
 
-<key>LSHandlerRank</key>
+            </dict>
 
-<string>Alternate</string>
+            <dict>
 
-<key>LSItemContentTypes</key>
+                <key>CFBundleTypeExtensions</key>
 
+                <array>
 
--<array>
+                  <string>rar</string>
 
-<string>public.zip-archive</string>
+                  <string>RAR</string>
 
-<string>public.archive</string>
+                </array>
 
-<string>com.pkware.zip-archive</string>
+                <key>CFBundleTypeName</key>
 
-<string>com.pkware.zipx-archive</string>
+                <string>Rar archive</string>
 
-</array>
+                <key>LSHandlerRank</key>
 
-</dict>
+                <string>Alternate</string>
 
+                <key>LSItemContentTypes</key>
 
--<dict>
+                <array>
 
-<key>CFBundleTypeExtensions</key>
+                  <string>com.rarlab.rar-archive</string>
 
+                  <string>public.archive</string>
 
--<array>
+                </array>
 
-<string>rar</string>
+            </dict>
 
-<string>RAR</string>
+            <dict>
 
-</array>
+                <key>CFBundleTypeExtensions</key>
 
-<key>CFBundleTypeName</key>
+                <array>
 
-<string>Rar archive</string>
+                  <string>7z</string>
 
-<key>LSHandlerRank</key>
+                  <string>7Z</string>
 
-<string>Alternate</string>
+                </array>
 
-<key>LSItemContentTypes</key>
+                <key>CFBundleTypeName</key>
 
+                <string>7z archive</string>
 
--<array>
+                <key>LSHandlerRank</key>
 
-<string>com.rarlab.rar-archive</string>
+                <string>Alternate</string>
 
-<string>public.archive</string>
+                <key>LSItemContentTypes</key>
 
-</array>
+                <array>
 
-</dict>
+                  <string>org.7-zip.7-zip-archive</string>
 
+                  <string>public.archive</string>
 
--<dict>
+                </array>
 
-<key>CFBundleTypeExtensions</key>
+            </dict>
 
+            <dict>
 
--<array>
+                <key>CFBundleTypeName</key>
 
-<string>7z</string>
+                <string>Waveform audio</string>
 
-<string>7Z</string>
+                <key>LSHandlerRank</key>
 
-</array>
+                <string>Alternate</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSItemContentTypes</key>
 
-<string>7z archive</string>
+                <array>
 
-<key>LSHandlerRank</key>
+                  <string>com.microsoft.waveform-​audio</string>
 
-<string>Alternate</string>
+                </array>
 
-<key>LSItemContentTypes</key>
+            </dict>
 
+            <dict>
 
--<array>
+                <key>CFBundleTypeName</key>
 
-<string>org.7-zip.7-zip-archive</string>
+                <string>Windows icon image</string>
 
-<string>public.archive</string>
+                <key>LSHandlerRank</key>
 
-</array>
+                <string>Alternate</string>
 
-</dict>
+                <key>LSItemContentTypes</key>
 
+                <array>
 
--<dict>
+                  <string>com.microsoft.ico</string>
 
-<key>CFBundleTypeName</key>
+                  <string>com.apple.icns</string>
 
-<string>Waveform audio</string>
+                </array>
 
-<key>LSHandlerRank</key>
+            </dict>
 
-<string>Alternate</string>
+            <dict>
 
-<key>LSItemContentTypes</key>
+                <key>CFBundleTypeName</key>
 
+                <string>Windows bitmap image</string>
 
--<array>
+                <key>LSHandlerRank</key>
 
-<string>com.microsoft.waveform-​audio</string>
+                <string>Alternate</string>
 
-</array>
+                <key>LSItemContentTypes</key>
 
-</dict>
+                <array>
 
+                  <string>com.microsoft.bmp</string>
 
--<dict>
+                </array>
 
-<key>CFBundleTypeName</key>
+            </dict>
 
-<string>Windows icon image</string>
+            <dict>
 
-<key>LSHandlerRank</key>
+                <key>CFBundleTypeName</key>
 
-<string>Alternate</string>
+                <string>Microsoft PowerPoint</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSHandlerRank</key>
 
+                <string>Alternate</string>
 
--<array>
+                <key>LSItemContentTypes</key>
 
-<string>com.microsoft.ico</string>
+                <array>
 
-<string>com.apple.icns</string>
+                  <string>com.microsoft.powerpoint.​ppt</string>
 
-</array>
+                  <string>org.openxmlformats.presentationml.presentation</string>
 
-</dict>
+                </array>
 
+            </dict>
 
--<dict>
+            <dict>
 
-<key>CFBundleTypeName</key>
+                <key>CFBundleTypeName</key>
 
-<string>Windows bitmap image</string>
+                <string>Microsoft Excel</string>
 
-<key>LSHandlerRank</key>
+                <key>LSHandlerRank</key>
 
-<string>Alternate</string>
+                <string>Alternate</string>
 
-<key>LSItemContentTypes</key>
+                <key>LSItemContentTypes</key>
 
+                <array>
 
--<array>
+                  <string>org.openxmlformats.spreadsheetml.sheet</string>
 
-<string>com.microsoft.bmp</string>
+                  <string>com.microsoft.excel.xls</string>
 
-</array>
+                </array>
 
-</dict>
+            </dict>
 
+            <dict>
 
--<dict>
+                <key>CFBundleTypeName</key>
 
-<key>CFBundleTypeName</key>
+                <string>Microsoft Word</string>
 
-<string>Microsoft PowerPoint</string>
+                <key>LSHandlerRank</key>
 
-<key>LSHandlerRank</key>
+                <string>Alternate</string>
 
-<string>Alternate</string>
+                <key>LSItemContentTypes</key>
 
-<key>LSItemContentTypes</key>
+                <array>
 
+                  <string>com.microsoft.word.doc</string>
 
--<array>
+                  <string>com.microsoft.word.wordml</string>
 
-<string>com.microsoft.powerpoint.​ppt</string>
+                  <string>org.openxmlformats.wordprocessingml.document</string>
 
-<string>org.openxmlformats.presentationml.presentation</string>
+                </array>
 
-</array>
+            </dict>
 
-</dict>
+            <dict>
 
+                <key>CFBundleTypeName</key>
 
--<dict>
+                <string>PDF</string>
 
-<key>CFBundleTypeName</key>
+                <key>LSHandlerRank</key>
 
-<string>Microsoft Excel</string>
+                <string>Alternate</string>
 
-<key>LSHandlerRank</key>
+                <key>LSItemContentTypes</key>
 
-<string>Alternate</string>
+                <array>
 
-<key>LSItemContentTypes</key>
+                  <string>com.adobe.pdf</string>
 
+                </array>
 
--<array>
+            </dict>
 
-<string>org.openxmlformats.spreadsheetml.sheet</string>
+        </array>
 
-<string>com.microsoft.excel.xls</string>
+    </gap:config-file>
 
-</array>
 
-</dict>
 
+    <gap:config-file platform="ios" parent="NSAppTransportSecurity" mode="add">
 
--<dict>
+        <dict>
 
-<key>CFBundleTypeName</key>
+            <key>NSAllowsArbitraryLoads</key><true/>
 
-<string>Microsoft Word</string>
+        </dict>
 
-<key>LSHandlerRank</key>
+    </gap:config-file>
 
-<string>Alternate</string>
 
-<key>LSItemContentTypes</key>
 
+    <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription">
 
--<array>
+        <string>We'd like to access your photo library to let you upload a photo or image to the site.</string>
 
-<string>com.microsoft.word.doc</string>
+    </gap:config-file>
 
-<string>com.microsoft.word.wordml</string>
 
-<string>org.openxmlformats.wordprocessingml.document</string>
-
-</array>
-
-</dict>
-
-
--<dict>
-
-<key>CFBundleTypeName</key>
-
-<string>PDF</string>
-
-<key>LSHandlerRank</key>
-
-<string>Alternate</string>
-
-<key>LSItemContentTypes</key>
-
-
--<array>
-
-<string>com.adobe.pdf</string>
-
-</array>
-
-</dict>
-
-</array>
-
-</gap:config-file>
-
-
--<gap:config-file parent="NSAppTransportSecurity" platform="ios" mode="add">
-
-
--<dict>
-
-<key>NSAllowsArbitraryLoads</key>
-
-<true/>
-
-</dict>
-
-</gap:config-file>
-
-
--<gap:config-file parent="NSPhotoLibraryUsageDescription" platform="ios">
-
-<string>We'd like to access your photo library to let you upload a photo or image to the site.</string>
-
-</gap:config-file>
 
 </widget>
